@@ -29,7 +29,6 @@ function fetchData() {
   });
 }
 
-// Handling the Promise
 fetchData()
   .then((data) => {
     console.log("Success:", data);
@@ -74,15 +73,12 @@ function displayUserInfo(user) {
 getUserInfo(displayUserInfo);
 
 5)
-// user clicking the "Download File" button
 console.log("User clicked 'Download File' button");
 
-// asynchronous file download using setTimeout
 setTimeout(() => {
   console.log("File download started...");
 }, 0); // Immediately places the callback into the message queue
 
-// Progress updates during the download
 setTimeout(() => {
   console.log("Download in progress: 50% completed");
 }, 1000); // 1-second delay to simulate progress update
@@ -107,12 +103,10 @@ function delayedGreeting(name, callback) {
   }, 2000);
 }
 
-// Example of a callback function that could be passed to delayedGreeting
 function afterGreeting() {
   console.log("Greeting has been displayed!");
 }
 
-// Calling the delayedGreeting function with a name and callback
 delayedGreeting("Alice", afterGreeting);
 
 
