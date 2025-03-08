@@ -4,7 +4,7 @@ Pending –
 The initial state. The promise is neither fulfilled nor rejected; it's waiting for an asynchronous operation to complete.
 
 Fulfilled –
-The operation completed successfully, and the promise has a resolved value.
+The operation was completed successfully, and the promise has a resolved value.
 
 Rejected –
 The operation failed, and the promise has a reason for the failure (an error or rejection message).
@@ -94,9 +94,14 @@ console.log("Download complete!");
 
 console.log("Download request sent, waiting for file...");
 
+### How the Event Loop Works
+
 Call Stack: JavaScript has a call stack where function execution is managed in a Last-In, First-Out (LIFO) order.
+
 Web APIs (or Background Tasks): These include setTimeout, setInterval, fetch, DOM events, and other non-blocking operations.
+
 Callback Queue (Task Queue): When an asynchronous operation is completed, its callback is pushed into the task queue.
+
 Event Loop: It continuously checks the call stack and, if empty, moves tasks from the queue to the stack for execution.
 
 ## Write a function called delayedGreeting that takes a name as an argument and logs a greeting message to the console after a 2-second delay using setTimeout. Use a callback function to achieve this.
