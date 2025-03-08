@@ -6,7 +6,12 @@
     <link rel="stylesheet" href="./style.css" />
     <!-- External JS -->
     <!-- <script src="./main.js"></script> -->
-    <script src="./script.js"></script>
+    <!-- Method 1: Import a module -->
+    <script type="module" src="./script.js"></script>
+    <!-- <script type="module">
+      import { add } from "./math.js";
+      console.log("Sum of 200 + 350 :", add(200, 350));
+    </script> -->
 
     <style>
       /* Embedded CSS */
@@ -54,6 +59,8 @@
       <h3 class="module-title">1. Introduction to JavaScript</h3>
 
       <h4 id="overview">Overview of JavaScript: What it is and how it works</h4>
+
+      <button id="main-button">I'm the Button</button>
     </div>
   </body>
 </html>
