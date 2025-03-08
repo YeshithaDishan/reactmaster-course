@@ -16,29 +16,28 @@ If a non-promise value is returned, it gets wrapped in a resolved Promise.
 Errors inside an async function are returned as rejected Promises.
 
 function fetchData() {
-return new Promise((resolve, reject) => {
-console.log("Fetching data...");
+  return new Promise((resolve, reject) => {
+    console.log("Fetching data...");
 
     setTimeout(() => {
-      let success = Math.random() > 0.3; // 70% chance of success
+      let success = true; 
 
       if (success) {
         resolve("Data retrieved successfully!");
       } else {
         reject("Failed to fetch data");
       }
-    }, 2000); // Simulating 2 seconds delay
-
-});
+    }, 2000); 
+  });
 }
 
 fetchData()
-.then((data) => {
-console.log("Success:", data);
-})
-.catch((error) => {
-console.error("Error:", error);
-});
+  .then((data) => {
+    console.log("Success:", data);
+  })
+  .catch((error) => {
+    console.error("Error:", error);
+  });
 
 ## Explain the purpose of the await keyword.
 
