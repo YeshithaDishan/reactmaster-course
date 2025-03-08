@@ -60,7 +60,6 @@ fetchData();
 What is a Callback Function?
 A callback function is a function passed into another function and runs later when needed.
 
-// Function that simulates retrieving user info asynchronously
 function getUserInfo(callback) {
   setTimeout(() => {
     let user = { username: "Yeshitha", location: "Ganemulla" }; // Simulated user data
@@ -68,12 +67,10 @@ function getUserInfo(callback) {
   }, 1500); // Simulating a 1.5-second delay
 }
 
-// Callback function to handle the user info
 function displayUserInfo(user) {
   console.log("User Info:", user);
 }
 
-// Calling the function with the callback
 getUserInfo(displayUserInfo);
 
 5)
