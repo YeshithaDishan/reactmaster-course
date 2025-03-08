@@ -40,7 +40,6 @@ fetchData()
 
 
 3)
-What is await?
 The await keyword is used inside async functions to pause execution until a Promise is resolved or rejected.
 
 function getData() {
@@ -56,12 +55,6 @@ async function fetchData() {
 }
 
 fetchData();
-
-
-OUTPUT - 
-Fetching data...
-(Data is received after 2 seconds)
-Data received
 
 4)
 What is a Callback Function?
@@ -84,15 +77,15 @@ function displayUserInfo(user) {
 getUserInfo(displayUserInfo);
 
 5)
-// Simulating a user clicking the "Download File" button
+// user clicking the "Download File" button
 console.log("User clicked 'Download File' button");
 
-// Simulating an asynchronous file download using setTimeout
+// asynchronous file download using setTimeout
 setTimeout(() => {
   console.log("File download started...");
 }, 0); // Immediately places the callback into the message queue
 
-// Simulating progress updates during download
+// Progress updates during the download
 setTimeout(() => {
   console.log("Download in progress: 50% completed");
 }, 1000); // 1-second delay to simulate progress update
