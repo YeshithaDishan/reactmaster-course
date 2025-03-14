@@ -124,7 +124,7 @@ Install ky via npm:
 npm install ky
 ```
 
-## Running the Project
+## 6.Running the Project
 
 ```jsx
 npm run dev
